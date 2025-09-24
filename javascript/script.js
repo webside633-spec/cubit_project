@@ -95,7 +95,7 @@ function shuffle() {
     html += `
       <div class="card" style=" position: relative; display: inline-block;">
         <a href="${link}" target="_blank" style="text-decoration:none; color:inherit; display:block; position: relative;">
-          <img src="../images/${img}"  />
+          <img src="./images/${img}"  />
           <div class="card_overlay card_overlay--blur">
             <div class="card_title">${title}</div>
             <div class="card_text">${description}</div>
@@ -112,3 +112,4 @@ function shuffle() {
 }
 
 window.onload = shuffle;
+
