@@ -113,7 +113,7 @@ nav ul li a {
   text-decoration: none;
   color:  #0E4081;
   font-size: 95%;
-  font-weight: 400;
+  font-weight: bold;
   padding: 4px 8px;
   border-radius: 5px;
 }
@@ -538,4 +538,5 @@ display: block;
   object-fit: cover;       /* keeps image aspect ratio nicely */
   /* remove margin from inline styles */
 }
+
 
