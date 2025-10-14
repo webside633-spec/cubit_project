@@ -60,35 +60,43 @@ body {
 }
 
 #typing {
-  white-space: nowrap;
-  overflow: hidden;
   font-weight: 700;
   font-family: Cambria, Georgia, serif;
   font-size: 3.2rem;
   color: #7d8597;
+
+  /* prevent height shift */
+  height: 80px; /* set to the max needed height */
+  overflow: hidden;
+  position: relative;
+}
+.rotating-text-wrapper {
+  height: 60px; /* Set based on your font-size */
+  overflow: hidden;
+  display: flex;
+  align-items: center; /* Vertically center the text */
 }
 
-/*text - animations */
-
+/* Your animated text */
 .rotating-text {
-  margin-left: 60px;
-  margin-top: -10px;
+  display: inline-block;
   font-family: 'Courier New', Courier, monospace;
   font-size: 2rem;
   font-weight: 600;
   color: #696969;
-  height: 50px;
+
   white-space: nowrap;
   overflow: hidden;
   user-select: none;
+  min-width: 260px; /* Prevent horizontal flicker */
   animation: fadeIn 0.7s forwards ease;
 }
 
+/* Optional fade-in animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -201,7 +209,7 @@ body {
 
 .contain img {
   width: 100%;
-  max-width: 350px;
+  max-width: 300px;
   height: auto;
   border-radius: 10px;
   display: block;
