@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/design.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <title>Signage & Display Solutions</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="../images/Cubit_Print-logo.png" alt="logo" />
+        </div>
+        <ul style="align-items: c">
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../templates/work-show.html">Work</a>
+            </li>
+            <li>
+                <a href="../templates/about-us.html">About Us</a>
+            </li>
+            <li>
+                <a href="../templates/services.html">Services</a>
+            </li>
+            <li>
+                <a href="../templates/contact-us.html">Contact Us</a>
+            </li>
+        </ul>
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    </nav>
+    <div class="menubar">
+        <ul>
+            <li>
+                <a href="../index.html">Home</a>
+            </li>
+            <li>
+                <a href="../templates/work-show.html">Work</a>
+            </li>
+            <li>
+                <a href="../templates/about-us.html">About Us</a>
+            </li>
+            <li>
+                <a href="../templates/services.html">Services</a>
+            </li>
+            <li>
+                <a href="../templates/contact-us.html">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+    <script src="../javascript/script.js"></script>
+
+    <!-- Preloader (place just inside <body> before your content) -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="animate-on-scroll">
+        <div class="page-title-banner">
+            <h1>Services</h1>
+        </div>
+        <main class="container" role="main">
+            <div class="subtopics" aria-label="Service subtopics">
+                <div class="title-d">🪧 Signage & Display Solutions</div>
+                <div class="subtopic-item" data-index="0" tabindex="0">Hoarding</div>
+                <div class="subtopic-item" data-index="1" tabindex="0">LED Board</div>
+                <div class="subtopic-item" data-index="2" tabindex="0">Backlight Board</div>
+                <div class="subtopic-item" data-index="3" tabindex="0">Banner Design / Printing</div>
+            </div>
+
+            <section class="images-column" aria-label="Service subtopic images">
+                <div class="image-item" data-index="0" id="section-0">
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80"
+                        alt="Hoarding" />
+                </div>
+
+                <div class="image-item" data-index="1" id="section-1">
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80"
+                        alt="LED Board" />
+                </div>
+                <div class="image-item" data-index="2" id="section-2">
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+                        alt="Backlight Board" />
+                </div>
+                <div class="image-item" data-index="3" id="section-3">
+                    <img loading="lazy"
+                        src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
+                        alt="Banner Design / Printing" />
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3>Raj Template</h3>
+                    <p>
+                        Raj Template is your go-to source for modern web design tutorials and templates. We provide
+                        beautifully
+                        structured guides with full source code to help you learn faster.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <p><i class="fas fa-envelope"></i> support@rajtemplate.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Web Lane, Coding City, India</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../templates/work-show.html">Work</a></li>
+                        <li><a href="../templates/about-us.html">About Us</a></li>
+                        <li><a href="../templates/services.html">Services</a></li>
+                        <li><a href="../templates/contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                &copy; 2025 <a href="index.html">Cubit Print</a> — All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.image-item');
+        const topics = document.querySelectorAll('.subtopic-item');
+
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5,
+        };
+
+        const callback = (entries) => {
+            entries.forEach(entry => {
+                const index = entry.target.getAttribute('data-index');
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    topics.forEach(t => t.classList.remove('active'));
+                    images.forEach(img => img.classList.remove('active'));
+                    entry.target.classList.add('active');
+                    topics[index].classList.add('active');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(callback, options);
+        images.forEach(img => observer.observe(img));
+
+        // Smooth scroll on topic click
+        topics.forEach(topic => {
+            topic.addEventListener('click', () => {
+                const index = topic.getAttribute('data-index');
+                document.getElementById(`section-${index}`).scrollIntoView({ behavior: 'smooth' });
+                topics.forEach(t => t.classList.remove('active'));
+                images.forEach(img => img.classList.remove('active'));
+                topic.classList.add('active');
+                images[index].classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

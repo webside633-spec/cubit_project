@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        /* 🔵 404 PAGE D - Extra styles only */
+        .error-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 20px;
+            min-height: 80vh;
+            background: #fff;
+        }
+
+        .error-box {
+            background: white;
+            width: 100%;
+            max-width: 380px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .error-box .number {
+            font-size: 8.5rem;
+            font-weight: 900;
+            color: #0E4081;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .error-box .shape {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: #0E4081;
+            opacity: 0.15;
+            border-radius: 15px;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+            z-index: 1;
+        }
+
+        .error-box h2 {
+            font-weight: 700;
+            color: #696969;
+            margin: 1rem 0;
+            z-index: 2;
+            position: relative;
+        }
+
+        .error-box p {
+            color: #444;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+            z-index: 2;
+            position: relative;
+        }
+
+        .error-box a {
+            background: #0E4081;
+            color: white;
+            padding: 0.75rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 2;
+            position: relative;
+            display: inline-block;
+            transition: background 0.3s ease;
+        }
+
+        .error-box a:hover {
+            background: #083063;
+        }
+
+        @media (max-width: 600px) {
+            .error-box {
+                padding: 2rem 1.5rem;
+            }
+
+            .error-box .number {
+                font-size: 6rem;
+            }
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    
+
+    <!-- ✅ 404 PAGE CONTENT -->
+    <section class="error-container">
+        <div class="error-box">
+            <div class="number">404</div>
+            <div class="shape" aria-hidden="true"></div>
+            <h2>Sorry, page not found</h2>
+            <p>The page you're looking for doesn't exist or has been moved.</p>
+            <a href="/">Back to Home</a>
+        </div>
+    </section>
+
+    </div>
+
+</body>
+
+</html>
