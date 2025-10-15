@@ -66,7 +66,7 @@ body {
   color: #7d8597;
 
   /* prevent height shift */
-  height: 80px; /* set to the max needed height */
+  height: 120px; /* set to the max needed height */
   overflow: hidden;
   position: relative;
 }
@@ -1051,7 +1051,32 @@ footer {
     .card_text {
       font-size: 1em;
       text-align: center;
-    }
+    }@media (max-width: 768px) {
+  #result {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+    gap: 12px;
+    padding: 15px;
+  }
+
+  #result .card {
+    aspect-ratio: 1 / 1; /* Maintain square aspect */
+  }
+
+  .card_title {
+    font-size: 1.2em;
+  }
+
+  .card_text {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  #result {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+  }
+}
+
 
     /* ===== Popup overlay / box ===== */
     .popup-overlay {
@@ -1448,25 +1473,48 @@ footer {
 /* === Responsive === */
 @media (max-width: 720px) {
   .subtopics {
-    flex-direction: row;
-    gap: 20px;
-    overflow-x: auto;
+    /* Make vertical stack for title and scroll area */
+    display: block;
     position: relative;
-    top: auto;
+    width: 100%;
+    padding-left: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
-    width: 100%;
-    scroll-snap-type: x mandatory;
   }
 
-  .subtopic-item {
+  .title-d {
+    /* Ensure visible, spacing below */
     font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 12px;
+  }
+
+  /* Make subtopic-items scroll horizontally */
+  .subtopic-item {
+    display: inline-block; /* inline for horizontal flow */
     white-space: nowrap;
-    flex-shrink: 0;
-    padding-bottom: 4px;
+    padding: 6px 14px;
+    font-size: 1.1rem;
+    margin-right: 16px;
+    line-height: 1.4;
+    cursor: pointer;
     scroll-snap-align: start;
+    vertical-align: middle; /* fix height alignment */
+  }
+
+  /* Wrap subtopic-items in horizontal scroll container */
+  .subtopics {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 }
+
+
+
 
     .subtopic-item::after {
         content: '';
